@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://codle.mahitm.com
+
+# Sitemaps
+Sitemap: https://codle.mahitm.com/sitemap.xml
