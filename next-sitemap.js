@@ -1,4 +1,4 @@
-const siteUrl = "https://codle.mahitm.com";
+const siteUrl = "https://hiddenstars.vercel.app/";
 
 /** 
  * @type {import('next-sitemap').IConfig} 

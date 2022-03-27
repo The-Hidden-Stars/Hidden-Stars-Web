@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://codle.mahitm.com
+Host: https://hiddenstars.vercel.app/
 
 # Sitemaps
-Sitemap: https://codle.mahitm.com/sitemap.xml
+Sitemap: https://hiddenstars.vercel.app/sitemap.xml
