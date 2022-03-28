@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             <h1 className='text-white md:text-6xl text-3xl font-bold'>
               <span className='text-blue-500'>Join</span> The Hidden Stars
             </h1>
-            <Typist>
+            <Typist cursor={{ show: false }}>
               <h1 className='text-white md:text-6xl text-3xl font-bold'>
                 Movement <span className='text-blue-500'>Today</span>.
               </h1>
