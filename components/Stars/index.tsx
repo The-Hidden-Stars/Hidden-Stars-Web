@@ -17,7 +17,7 @@ const Mesh = () => {
         const geometry = new THREE.BufferGeometry();
         geometry.setAttribute(
             "position",
-            new THREE.BufferAttribute(getRandomParticelPos(1000), 3)
+            new THREE.BufferAttribute(getRandomParticelPos(1500), 3)
         );
         return geometry;  
     }, []);
@@ -56,6 +56,7 @@ const Stars = () => {
         <Canvas
             className="-z-[1] top-0 left-0 bg-black"
             style={{ 
+                background: "#000",
                 position: "fixed",
                 width: "100vw",
                 height: "100vh",

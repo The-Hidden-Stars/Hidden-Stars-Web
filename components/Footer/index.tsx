@@ -62,7 +62,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="py-6 px-4 bg-black bg-opacity-40 md:flex md:items-center md:justify-between">
+            <div className="py-6 px-4 bg-black bg-opacity-20 md:flex md:items-center md:justify-between">
                 <span className="text-sm text-gray-300 sm:text-center">
                     © 2022 <Link href={"/"} passHref><a>The Hidden Stars™</a></Link>. All Rights Reserved.
                 </span>
