@@ -27,7 +27,7 @@ const Home: NextPage = () => {
                 Movement <span className='text-blue-500'>Today</span>.
               </h1>
             </Typist>
-            <div className='flex flex-col w-screen px-5 justify-center'>
+            <div className='flex flex-col w-screen px-5 justify-center !mt-8'>
               <h2 className='text-white text-center'>
                 We are all stars! Sometimes we are just hidden in the crowd. 
               </h2>
