@@ -45,7 +45,7 @@ const Home: NextPage = () => {
     }, {
       rotateX: 0,
       rotateY: 0,
-    })
+    });
     
     gsap.timeline({
       repeat: 0,
@@ -72,6 +72,41 @@ const Home: NextPage = () => {
     
   }, [ tripleNineRef, aboutContainerRef, aboutH1Ref, aboutPRef ]);
 
+  const founderContainerRef = useRef<HTMLElement | null>(null);
+  const founderH1Ref = useRef<HTMLHeadingElement | null>(null);
+  const founderPRef = useRef<HTMLParagraphElement | null>(null);
+
+  useEffect(() => {
+    if (
+      !founderH1Ref.current || 
+      !founderPRef.current || 
+      !founderContainerRef.current ) return; 
+
+    gsap.timeline({
+      repeat: 0,
+      scrollTrigger: {
+        trigger: founderContainerRef.current,
+        scrub: true,
+        anticipatePin: 2,
+        pin: true,
+      }
+    }).fromTo(founderH1Ref.current, {
+      y: 75,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1
+    })
+    .fromTo(founderPRef.current, {
+      y: 100,
+      opacity: 0,
+    }, {
+      y: 0,
+      opacity: 1
+    }, "-=0.5")
+
+  }, [ founderH1Ref, founderPRef, founderContainerRef ]);
+
   return (
     <div>
       <Head>
@@ -80,9 +115,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main style={{ height: `calc(100vh * 3)` }} className="flex-1 flex flex-col py-4 min-h-screen ">
+      <main  className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
-          <header className='flex min-h-screen justify-center flex-col items-center md:space-y-3 space-y-1'>
+          <header className='flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
             <h1 className='text-white md:text-6xl text-3xl font-bold'>
               <span className='text-blue-500'>Join</span> The Hidden Stars
             </h1>
@@ -117,7 +152,7 @@ const Home: NextPage = () => {
               </h1>
             </div>
             <h1 ref={aboutH1Ref} className='text-white md:text-6xl text-3xl font-bold'>
-              What We <span className='text-blue-500'>Do</span>?
+              What Do We <span className='text-blue-500'>Do</span>?
             </h1>
             <p ref={aboutPRef} className='text-white max-w-xl text-center'>
               We help each other when we are feeling extreme emotions or major issues in life. 
@@ -126,16 +161,26 @@ const Home: NextPage = () => {
             </p>
            
           </section>
-          <span id="about"></span>
-          {/* <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/KdiJ9zqiMn4" 
-            title="YouTube video player" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen>
-          </iframe> */}
+          <span style={{ height: `calc(100vh * 1)`, minHeight: 500  }} id="about"></span>
+          <section ref={founderContainerRef} className='min-h-screen w-screen p-4 bg-red flex space-y-5 justify-center flex-col items-center'>
+              <iframe 
+                className='rounded-md md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
+                src="https://www.youtube.com/embed/KdiJ9zqiMn4" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
+              <h1 ref={founderH1Ref} className='text-white md:text-6xl text-3xl font-bold'>
+                About the <span className='text-blue-500'>Founder</span>.
+              </h1>
+              <p ref={founderPRef} className='text-white max-w-xl text-center'>
+                Hello! My name is Abhijit Kosuru, the founder of THE HIDDEN STARS MOVEMENT! I&apos;ve been struggling with various mental 
+                issues such as depression, anxiety, and more. However, as of last year the song, &quot;HIDDEN STAR&quot; by Yung MC, 
+                inspired me to start this movement to inspire those who are in the same position I am in. 
+              </p>
+          </section>
+          <span style={{ height: `calc(100vh * 1)`, minHeight: 500  }}  id="founder"></span>
       </main>
       <Footer />
     </div>
