@@ -22,7 +22,7 @@ const Mesh = () => {
         return geometry;  
     }, []);
 
-    const { set, gl } = useThree((state) => state)
+    const { set } = useThree((state) => state)
 
     useEffect(() => {
       set({ size: { width: window.innerWidth, height: window.innerHeight}})
@@ -31,9 +31,9 @@ const Mesh = () => {
     const meshRef = useRef<any | undefined>();
 
     useFrame(() => {
-      //  gl.setClearColor(0x000000, 0);
         if (meshRef) {
             meshRef.current.rotation.y += 0.0005;
+            meshRef.current.rotation.z += 0.0000; // 0.0005
         }
     });
 

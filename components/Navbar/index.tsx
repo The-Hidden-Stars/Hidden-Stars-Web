@@ -8,7 +8,7 @@ const Navbar = () => {
     const [ mobileMenuOpen, setMobileMenuOpen ] = useState(false);
 
     return (
-        <nav className={`fixed w-full ${mobileMenuOpen && "pb-[35px]"} md:pb-3 bg-white border-b border-solid border-b-gray-800 px-3 sm:px-4 py-2.5 dark:bg-gray-900 backdrop-blur-md dark:bg-opacity-75`}>
+        <nav className={`fixed z-50 w-full ${mobileMenuOpen && "pb-[35px]"} md:pb-3 bg-white border-b border-solid border-b-gray-800 px-3 sm:px-4 py-2.5 dark:bg-gray-900 backdrop-blur-md dark:bg-opacity-75`}>
             <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
                 <a className="flex items-center space-x-3">
@@ -36,13 +36,13 @@ const Navbar = () => {
             <div className={`${mobileMenuOpen ? "block" : "hidden"} justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-3`}>
                 <ul className="flex space-y-3 md:space-y-0 flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                    <a href="#" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                    <a href="/" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Mission</a>
+                    <a href="#about" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Mission</a>
                 </li>
                 <li>
-                    <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Founder</a>
+                    <a href="#founder" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Founder</a>
                 </li>
                 </ul>
             </div>
