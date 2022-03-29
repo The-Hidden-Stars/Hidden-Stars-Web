@@ -11,6 +11,7 @@ import gsap from "gsap";
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import styles from "../styles/Home.module.css";
 import clsx from 'clsx'
+import Image from 'next/image'
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -122,7 +123,7 @@ const Home: NextPage = () => {
       opacity: 0,
     }, {
       y: 0,
-      opacity: 1
+      opacity: 1,
     }, "-=0.5")
 
   }, [ founderH1Ref, founderPRef, founderContainerRef, founderIFrameRef ]);
@@ -135,7 +136,41 @@ const Home: NextPage = () => {
       <Navbar />
       <main  className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
-          <header className='flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
+          <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
+            <div className='!-z-[1] pointer-events-none'>
+              <div className='absolute w-[150px] h-[150px] left-[0px] md:w-[225px] md:h-[225px] top-[50px] md:left-[100px] md:top-[100px] rotate-12'>
+                <Image 
+                  quality={100}
+                  layout="fill"
+                  objectFit='contain'
+                  src="/memojis/avatar-04.png"
+                />
+              </div>
+              <div className='absolute w-[175px] h-[175px] right-[10px] md:w-[250px] md:h-[250px] top-[40px]  md:right-[100px] md:top-[40px] -rotate-12'>
+                <Image 
+                  quality={100}
+                  layout="fill"
+                  objectFit='contain'
+                  src="/memojis/avatar-02.png"
+                />
+              </div>
+              <div className='absolute w-[175px] h-[175px] md:w-[200px] md:h-[200px]  md:left-[100px] md:bottom-[80px] left-[0px] bottom-[20px] -rotate-12'>
+                <Image 
+                  quality={100}
+                  layout="fill"
+                  objectFit='contain'
+                  src="/memojis/avatar-03.png"
+                />
+              </div>
+              <div className='absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] right-[10px] bottom-[10px] md:right-[100px] md:bottom-[30px]'>
+                <Image 
+                  quality={100}
+                  layout="fill"
+                  objectFit='contain'
+                  src="/memojis/avatar-01.png"
+                />
+              </div>
+            </div>
             <h1 className='text-white md:text-6xl text-3xl font-bold'>
               <span className='text-blue-500'>Join</span> The Hidden Stars
             </h1>
