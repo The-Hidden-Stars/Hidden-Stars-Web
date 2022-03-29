@@ -96,13 +96,13 @@ const Home: NextPage = () => {
                 We are all stars! Sometimes we are just hidden in the crowd. 
               </h2>
             </div>
-            <div className='flex space-x-3 md:space-x-5 !mt-10 w-full justify-center'>
+            <div className='flex space-x-3 items-center md:space-x-5 !mt-10 w-full justify-center'>
               <Link href={"https://discord.com/invite/CA9AEyWSGr"} passHref>
                 <a target={"_blank"} rel="noopener noreferrer">
                   <Button className="!mr-0 w-[140px] md:min-w-[150px]">Discord Server</Button>
                 </a>
               </Link>
-              <span className='h-10 w-[2px] bg-gray-400 rounded-lg'></span>
+              <span className='md:h-10 h-8 w-[2px] bg-gray-400 rounded-lg'></span>
               <Link href={"#about"}>
                 <Button mode='secondary' className="w-[140px] md:min-w-[150px]">Learn More</Button>
               </Link>
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             <div className='mb-8'>
               <h1 
                 ref={tripleNineRef} 
-                className={clsx("text-white md:text-9xl text-7xl font-bold", styles.tripleNine)}>
+                className={clsx("text-white md:text-9xl text-8xl font-bold", styles.tripleNine)}>
                   999
               </h1>
             </div>
