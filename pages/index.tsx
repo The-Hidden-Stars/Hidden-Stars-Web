@@ -80,7 +80,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main style={{ height: 3000 }} className="flex-1 flex flex-col py-4 min-h-screen ">
+      <main style={{ height: `calc(100vh * 3)` }} className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
           <header className='flex min-h-screen justify-center flex-col items-center md:space-y-3 space-y-1'>
             <h1 className='text-white md:text-6xl text-3xl font-bold'>
