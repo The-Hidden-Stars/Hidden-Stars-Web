@@ -48,6 +48,10 @@ const Navbar = () => {
         });
     }, [ router.events ]);
 
+    useEffect(() => {
+        setCurrentRoute(`${window.location.pathname}${window.location.hash}`);
+    }, []);
+
     return (
         <nav className={`fixed z-50 w-full ${mobileMenuOpen && "pb-[35px]"} md:pb-3 bg-white border-b border-solid border-b-gray-800 px-3 sm:px-4 py-2.5 dark:bg-gray-900 backdrop-blur-md dark:bg-opacity-75`}>
             <div className="container flex flex-wrap justify-between items-center mx-auto">
