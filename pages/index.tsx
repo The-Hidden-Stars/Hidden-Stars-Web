@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       scrollTrigger: {
         trigger: aboutContainerRef.current,
         scrub: true,
-        anticipatePin: 1,
+        anticipatePin: 2,
         pin: true,
       }
     }).fromTo(tripleNineRef.current, {
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
       scrollTrigger: {
         trigger: aboutContainerRef.current,
         scrub: true,
-        anticipatePin: 1,
+        anticipatePin: 2,
         pin: true,
       }
     }).fromTo(aboutH1Ref.current, {
