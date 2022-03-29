@@ -144,6 +144,7 @@ const Home: NextPage = () => {
                   layout="fill"
                   objectFit='contain'
                   src="/memojis/avatar-04.png"
+                  alt="memoji"
                 />
               </div>
               <div className='absolute w-[175px] h-[175px] right-[10px] md:w-[250px] md:h-[250px] top-[40px]  md:right-[100px] md:top-[40px] -rotate-12'>
@@ -152,6 +153,7 @@ const Home: NextPage = () => {
                   layout="fill"
                   objectFit='contain'
                   src="/memojis/avatar-02.png"
+                  alt="memoji"
                 />
               </div>
               <div className='absolute w-[175px] h-[175px] md:w-[200px] md:h-[200px]  md:left-[100px] md:bottom-[80px] left-[0px] bottom-[20px] -rotate-12'>
@@ -160,6 +162,7 @@ const Home: NextPage = () => {
                   layout="fill"
                   objectFit='contain'
                   src="/memojis/avatar-03.png"
+                  alt="memoji"
                 />
               </div>
               <div className='absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] right-[10px] bottom-[10px] md:right-[100px] md:bottom-[30px]'>
@@ -168,6 +171,7 @@ const Home: NextPage = () => {
                   layout="fill"
                   objectFit='contain'
                   src="/memojis/avatar-01.png"
+                  alt="memoji"
                 />
               </div>
             </div>
