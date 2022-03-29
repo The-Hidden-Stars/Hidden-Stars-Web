@@ -22,7 +22,7 @@ const Mesh = () => {
         return geometry;  
     }, []);
 
-    const set = useThree((state) => state.set)
+    const { set, gl } = useThree((state) => state)
 
     useEffect(() => {
       set({ size: { width: window.innerWidth, height: window.innerHeight}})
@@ -31,6 +31,7 @@ const Mesh = () => {
     const meshRef = useRef<any | undefined>();
 
     useFrame(() => {
+      //  gl.setClearColor(0x000000, 0);
         if (meshRef) {
             meshRef.current.rotation.y += 0.0005;
         }
@@ -56,12 +57,13 @@ const Stars = () => {
         <Canvas
             className="-z-[1] top-0 left-0 bg-black"
             style={{ 
-                background: "#000",
                 position: "fixed",
                 width: "100vw",
                 height: "100vh",
+                background: "#000",
             }}
             gl={{ 
+               // alpha: true,
                 antialias: true,
                 autoClear: true,
             }}

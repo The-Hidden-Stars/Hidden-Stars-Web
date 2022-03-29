@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import Typist from 'react-typist';
+import Button from '../components/Button'
+import Link from 'next/link'
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
 const Home: NextPage = () => {
@@ -31,6 +33,17 @@ const Home: NextPage = () => {
               <h2 className='text-white text-center'>
                 We are all stars! Sometimes we are just hidden in the crowd. 
               </h2>
+            </div>
+            <div className='flex space-x-3 md:space-x-5 !mt-10 w-full justify-center'>
+              <Link href={"https://discord.com/invite/CA9AEyWSGr"} passHref>
+                <a target={"_blank"} rel="noopener noreferrer">
+                  <Button className="!mr-0 w-[140px] md:min-w-[150px]">Discord Server</Button>
+                </a>
+              </Link>
+              <span className='h-10 w-[2px] bg-gray-400 rounded-lg'></span>
+              <Link href={"#about"}>
+                <Button mode='secondary' className="w-[140px] md:min-w-[150px]">Learn More</Button>
+              </Link>
             </div>
           </header>
         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/KdiJ9zqiMn4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}

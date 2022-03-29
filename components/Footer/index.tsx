@@ -37,7 +37,7 @@ const FooterItem : React.FC<IFooterItemProps> = ({ children, link, href,...props
 const Footer = () => {
     return (
         <footer className="bg-gray-900">
-            <div className="grid border-y border-gray-500 grid-cols-2 gap-8 py-8 px-6 md:grid-cols-3">
+            <div className="grid border-y border-gray-800 grid-cols-2 gap-8 py-8 px-6 md:grid-cols-3">
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Sitemap</h2>
                     <ul className="text-gray-300">
