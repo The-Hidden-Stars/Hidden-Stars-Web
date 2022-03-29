@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             <div className='mb-8'>
               <h1 
                 ref={tripleNineRef} 
-                className={clsx("text-white md:text-9xl text-3xl font-bold", styles.tripleNine)}>
+                className={clsx("text-white md:text-9xl text-7xl font-bold", styles.tripleNine)}>
                   999
               </h1>
             </div>
@@ -124,8 +124,9 @@ const Home: NextPage = () => {
               We relate and inspire each other. We take the negatives in life, 666, 
               and turn it into positive vibes, 999.
             </p>
-            <span id="about"></span>
+           
           </section>
+          <span id="about"></span>
           {/* <iframe 
             width="560" 
             height="315" 
