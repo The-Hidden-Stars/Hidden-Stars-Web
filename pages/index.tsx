@@ -179,7 +179,7 @@ const Home: NextPage = () => {
             </p>
            
           </section>
-          <span style={{ height: `calc(100vh * 1)`, minHeight: 500  }} id="about"></span>
+          <span style={{ height: `calc(50vh * 1)`, minHeight: 300  }} id="about"></span>
           <section ref={founderContainerRef} className='min-h-screen w-screen p-4 bg-red flex space-y-5 justify-center flex-col items-center'>
               <iframe 
                 ref={founderIFrameRef}
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                 inspired me to start this movement to inspire those who are in the same position I am in. 
               </p>
           </section>
-          <span style={{ height: `calc(100vh * 1)`, minHeight: 500  }}  id="founder"></span>
+          <span style={{ height: `calc(100vh * 1)`, minHeight: 650  }}  id="founder"></span>
       </main>
       <Footer />
     </div>
