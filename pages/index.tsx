@@ -137,7 +137,7 @@ const Home: NextPage = () => {
       <main  className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
           <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
-            <div className='!-z-[1] pointer-events-none'>
+            <div className='pointer-events-none'>
               <div className='absolute w-[150px] h-[150px] left-[0px] md:w-[225px] md:h-[225px] top-[50px] md:left-[100px] md:top-[100px] rotate-12'>
                 <Image 
                   quality={100}
@@ -175,29 +175,31 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <h1 className='text-white md:text-6xl text-3xl font-bold'>
-              <span className='text-blue-500'>Join</span> The Hidden Stars
-            </h1>
-            <Typist cursor={{ show: false }}>
+            <div className='z-10 flex justify-center flex-col items-center md:space-y-3'>
               <h1 className='text-white md:text-6xl text-3xl font-bold'>
-                Movement <span className='text-blue-500'>Today</span>.
+                <span className='text-blue-500'>Join</span> The Hidden Stars
               </h1>
-            </Typist>
-            <div className='flex flex-col w-screen px-5 justify-center !mt-8'>
-              <h2 className='text-white text-center'>
-                We are all stars! Sometimes we are just hidden in the crowd. 
-              </h2>
-            </div>
-            <div className='flex space-x-3 items-center md:space-x-5 !mt-10 w-full justify-center'>
-              <Link href={"https://discord.com/invite/CA9AEyWSGr"} passHref>
-                <a target={"_blank"} rel="noopener noreferrer">
-                  <Button className="!mr-0 w-[140px] md:min-w-[150px]">Discord Server</Button>
-                </a>
-              </Link>
-              <span className='md:h-10 h-8 w-[2px] bg-gray-400 rounded-lg'></span>
-              <Link href={"#about"}>
-                <Button mode='secondary' className="w-[140px] md:min-w-[150px]">Learn More</Button>
-              </Link>
+              <Typist cursor={{ show: false }}>
+                <h1 className='text-white md:text-6xl text-3xl font-bold'>
+                  Movement <span className='text-blue-500'>Today</span>.
+                </h1>
+              </Typist>
+              <div className='flex flex-col w-screen px-5 justify-center !mt-8'>
+                <h2 className='text-white text-center'>
+                  We are all stars! Sometimes we are just hidden in the crowd. 
+                </h2>
+              </div>
+              <div className='flex space-x-3 items-center md:space-x-5 !mt-10 w-full justify-center'>
+                <Link href={"https://discord.com/invite/CA9AEyWSGr"} passHref>
+                  <a target={"_blank"} rel="noopener noreferrer">
+                    <Button className="!mr-0 w-[140px] md:min-w-[150px]">Discord Server</Button>
+                  </a>
+                </Link>
+                <span className='md:h-10 h-8 w-[2px] bg-gray-400 rounded-lg'></span>
+                <Link href={"#about"}>
+                  <Button mode='secondary' className="w-[140px] md:min-w-[150px]">Learn More</Button>
+                </Link>
+              </div>
             </div>
           </header>
           <section ref={aboutContainerRef} className='min-h-screen p-4 flex space-y-5 justify-center flex-col items-center'>
@@ -224,7 +226,7 @@ const Home: NextPage = () => {
                 ref={founderIFrameRef}
                 className='rounded-md md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
                 src="https://www.youtube.com/embed/KdiJ9zqiMn4" 
-                title="YouTube video player" 
+                title="Hidden Stars Informational Video" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>

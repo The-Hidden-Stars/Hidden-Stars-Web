@@ -50,7 +50,7 @@ const Footer = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Support Us</h2>
                     <ul className="text-gray-300">
                         <FooterItem target="_blank" link="https://discord.com/invite/CA9AEyWSGr">Join Discord Server</FooterItem>
-                        <FooterItem link="/">Donate</FooterItem>
+                        {/* <FooterItem link="/">Donate</FooterItem> */}
                     </ul>
                 </div>
                 <div>
