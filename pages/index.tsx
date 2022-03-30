@@ -11,6 +11,7 @@ import gsap from "gsap";
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import styles from "../styles/Home.module.css";
 import clsx from 'clsx'
+import EmbedIFrame from '../components/EmbedIFrame'
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -221,15 +222,13 @@ const Home: NextPage = () => {
           </section>
           <span style={{ height: `calc(50vh * 1)`, minHeight: 300  }} id="about"></span>
           <section ref={founderContainerRef} className='min-h-screen w-screen p-4 bg-red flex space-y-5 justify-center flex-col items-center'>
-              <iframe 
+              <EmbedIFrame 
                 ref={founderIFrameRef}
-                className='rounded-md md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
-                src="https://www.youtube.com/embed/KdiJ9zqiMn4" 
+                className='md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
+                src="https://www.youtube.com/embed/KdiJ9zqiMn4?origin=https://hiddenstars.vercel.app/" 
                 title="Hidden Stars Informational Video" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-              </iframe>
+              >
+              </EmbedIFrame>
               <h1 ref={founderH1Ref} className='text-white md:text-6xl text-3xl font-bold'>
                 About the <span className='text-blue-500'>Founder</span>.
               </h1>
