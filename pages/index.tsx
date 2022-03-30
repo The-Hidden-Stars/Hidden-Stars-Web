@@ -11,7 +11,6 @@ import gsap from "gsap";
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import styles from "../styles/Home.module.css";
 import clsx from 'clsx'
-import Image from 'next/image'
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -139,7 +138,7 @@ const Home: NextPage = () => {
           <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
             <div className='pointer-events-none'>
               <div className='absolute w-[150px] h-[150px] left-[0px] md:w-[225px] md:h-[225px] top-[50px] md:left-[100px] md:top-[100px] rotate-12'>
-                <Image 
+                {/* <Image 
                   quality={100}
                   layout="fill"
                   objectFit='contain'
@@ -172,7 +171,7 @@ const Home: NextPage = () => {
                   objectFit='contain'
                   src="/memojis/avatar-01.png"
                   alt="memoji"
-                />
+                /> */}
               </div>
             </div>
             <div className='z-10 flex justify-center flex-col items-center md:space-y-3'>
