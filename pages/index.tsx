@@ -70,7 +70,6 @@ const Home: NextPage = () => {
       y: 0,
       opacity: 1
     }, "-=0.5")
-    
   }, [ tripleNineRef, aboutContainerRef, aboutH1Ref, aboutPRef ]);
 
   const founderContainerRef = useRef<HTMLElement | null>(null);
@@ -137,44 +136,6 @@ const Home: NextPage = () => {
       <main  className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
           <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
-            <div className='pointer-events-none'>
-              <div className='absolute w-[150px] h-[150px] left-[0px] md:w-[225px] md:h-[225px] top-[50px] md:left-[100px] md:top-[100px] rotate-12'>
-                {/* <Image 
-                  quality={100}
-                  layout="fill"
-                  objectFit='contain'
-                  src="/memojis/avatar-04.png"
-                  alt="memoji"
-                />
-              </div>
-              <div className='absolute w-[175px] h-[175px] right-[10px] md:w-[250px] md:h-[250px] top-[40px]  md:right-[100px] md:top-[40px] -rotate-12'>
-                <Image 
-                  quality={100}
-                  layout="fill"
-                  objectFit='contain'
-                  src="/memojis/avatar-02.png"
-                  alt="memoji"
-                />
-              </div>
-              <div className='absolute w-[175px] h-[175px] md:w-[200px] md:h-[200px]  md:left-[100px] md:bottom-[80px] left-[0px] bottom-[20px] -rotate-12'>
-                <Image 
-                  quality={100}
-                  layout="fill"
-                  objectFit='contain'
-                  src="/memojis/avatar-03.png"
-                  alt="memoji"
-                />
-              </div>
-              <div className='absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] right-[10px] bottom-[10px] md:right-[100px] md:bottom-[30px]'>
-                <Image 
-                  quality={100}
-                  layout="fill"
-                  objectFit='contain'
-                  src="/memojis/avatar-01.png"
-                  alt="memoji"
-                /> */}
-              </div>
-            </div>
             <div className='z-10 flex justify-center flex-col items-center md:space-y-3'>
               <h1 className='text-white md:text-6xl text-3xl font-bold'>
                 <span className='text-blue-500'>Join</span> The Hidden Stars
@@ -215,8 +176,8 @@ const Home: NextPage = () => {
             </h1>
             <p ref={aboutPRef} className='text-white max-w-xl text-center'>
               We help each other when we are feeling extreme emotions or major issues in life. 
-              We relate and inspire each other. We take the negatives in life, 666, 
-              and turn it into positive vibes, 999.
+              We relate to and inspire each other. We take the negatives in life, 666, 
+              and turn them into positive vibes, 999 <i className='text-gray-400'>- Paraphrased quote by Juice WRLD</i>
             </p>
            
           </section>
