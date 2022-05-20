@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                   Movement <span className='text-blue-500'>Today</span>.
                 </h1>
               </Typist>
-              <div className='flex flex-col w-screen px-5 justify-center !mt-8'>
+              <div className='flex flex-col px-5 justify-center !mt-8'>
                 <h2 className='text-white text-center'>
                   We are all stars! Sometimes we are just hidden in the crowd. 
                 </h2>
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
            
           </section>
           <span style={{ height: `calc(50vh * 1)`, minHeight: 300  }} id="about"></span>
-          <section ref={founderContainerRef} className='min-h-screen w-screen p-4 bg-red flex space-y-5 justify-center flex-col items-center'>
+          <section ref={founderContainerRef} className='min-h-screen w-full p-4 bg-red flex space-y-5 justify-center flex-col items-center'>
               <EmbedIFrame 
                 ref={founderIFrameRef}
                 className='md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
