@@ -1,15 +1,11 @@
+import React from "react";
 import clsx from "clsx";
-import React, { useEffect } from "react";
 
 interface EmbedIFrameProps extends React.DetailedHTMLProps<React.IframeHTMLAttributes<HTMLIFrameElement>, HTMLIFrameElement>{
     src: string; 
 }
 
 const EmbedIFrame = ({ src, className, ...props } : EmbedIFrameProps, ref : React.LegacyRef<HTMLIFrameElement>) => {
-    useEffect(() => {
-        console.log('created');
-    },[]);
-
     return (
         <iframe
             ref={ref}

@@ -3,6 +3,7 @@ import Head from "next/head";
 import React from "react";
 import Button from "../components/Button";
 import EmbedIFrame from "../components/EmbedIFrame";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
@@ -33,6 +34,7 @@ const MovementOrigins = () => {
                     />
                 </article>
             </main>
+            <Footer />
         </div>
     )
 }
