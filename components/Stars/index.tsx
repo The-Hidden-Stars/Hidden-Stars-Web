@@ -44,7 +44,7 @@ const Mesh = () => {
             material={new THREE.PointsMaterial({
                 size: 0.05,
                 map: loader.load(
-                    "./svg/logo.svg"
+                    "./svg/star.svg"
                 ),
                 transparent: true
                 })}>
