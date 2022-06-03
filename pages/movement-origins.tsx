@@ -17,9 +17,9 @@ const MovementOrigins = () => {
                 <title>Movement Origins | Hidden Stars</title>
             </Head>
             <Navbar />
-            <main className="sm:pt-[65px] flex-1 flex flex-col py-4 min-h-screen ">
+            <main className="sm:pt-[25vh] flex-1 flex flex-col py-4 min-h-screen ">
                 <Stars />
-                <article className="flex flex-col space-y-10 justify-center items-center min-h-screen">
+                <article className="flex flex-col space-y-10 sm:justify-start justify-center  items-center min-h-screen">
                     <Typist cursor={{ show: false }}>
                         <h1 className='text-white md:text-6xl text-3xl font-bold'>
                             Movement <span className='text-blue-500'>Origins</span>.
