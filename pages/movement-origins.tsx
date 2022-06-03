@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import React from "react";
+import Typist from "react-typist";
 import Button from "../components/Button";
 import EmbedIFrame from "../components/EmbedIFrame";
 import Footer from "../components/Footer";
@@ -16,12 +17,14 @@ const MovementOrigins = () => {
                 <title>Movement Origins | Hidden Stars</title>
             </Head>
             <Navbar />
-            <main className="pt-[65px] flex-1 flex flex-col py-4 min-h-screen ">
+            <main className="sm:pt-[65px] flex-1 flex flex-col py-4 min-h-screen ">
                 <Stars />
                 <article className="flex flex-col space-y-10 justify-center items-center min-h-screen">
-                    <h1 className='text-white md:text-6xl text-3xl font-bold'>
-                        Movement <span className='text-blue-500'>Origins</span>.
-                    </h1>
+                    <Typist cursor={{ show: false }}>
+                        <h1 className='text-white md:text-6xl text-3xl font-bold'>
+                            Movement <span className='text-blue-500'>Origins</span>.
+                        </h1>
+                    </Typist>
                     <Button 
                         as="a" 
                         target="_blank"
