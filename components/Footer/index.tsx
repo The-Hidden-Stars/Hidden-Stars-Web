@@ -42,8 +42,9 @@ const Footer = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Sitemap</h2>
                     <ul className="text-gray-300">
                         <FooterItem link="/">Home</FooterItem>
-                        <FooterItem link="#about">Our Misson</FooterItem>
-                        <FooterItem link="#founder">Founder</FooterItem>
+                        <FooterItem link="/#about">Our Misson</FooterItem>
+                        <FooterItem link="/#founder">Founder</FooterItem>
+                        <FooterItem link="/movement-origins">Movement Origins</FooterItem>
                     </ul>
                 </div>
                 <div>
