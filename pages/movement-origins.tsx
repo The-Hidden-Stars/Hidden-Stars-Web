@@ -1,3 +1,5 @@
+import { faHeadphones, faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import React from "react";
@@ -14,7 +16,7 @@ const MovementOrigins = () => {
                 <title>Movement Origins | Hidden Stars</title>
             </Head>
             <Navbar />
-            <main className="flex-1 flex flex-col py-4 min-h-screen ">
+            <main className="pt-[65px] flex-1 flex flex-col py-4 min-h-screen ">
                 <Stars />
                 <article className="flex flex-col space-y-10 justify-center items-center min-h-screen">
                     <h1 className='text-white md:text-6xl text-3xl font-bold'>
@@ -25,7 +27,10 @@ const MovementOrigins = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://ampl.ink/1OZmX">
-                            Listen to Song.
+                           <div className="flex space-x-2">
+                                <FontAwesomeIcon width={15} icon={faHeadphonesSimple} />
+                                <span>Listen to Song.</span>
+                           </div>
                     </Button>
                     <EmbedIFrame 
                         className="border border-solid border-white md:w-[600px] md:h-[400px] w-80 h-44"
