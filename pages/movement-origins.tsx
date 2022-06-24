@@ -1,4 +1,4 @@
-import { faHeadphones, faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
+import { faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dynamic from "next/dynamic";
 import Head from "next/head";

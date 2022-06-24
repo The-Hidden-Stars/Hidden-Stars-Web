@@ -53,7 +53,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed z-50 w-full ${mobileMenuOpen && "pb-[35px]"} md:pb-3 bg-white border-b border-solid border-b-gray-800 px-3 sm:px-4 py-2.5 dark:bg-gray-900 backdrop-blur-md dark:bg-opacity-75`}>
+        <>
+        <nav className={`sticky top-0 z-50 w-full ${mobileMenuOpen && "pb-[35px]"} md:pb-3 bg-white border-b border-solid border-b-[rgba(255,255,255,0.1)] px-3 sm:px-4 py-2.5 dark:bg-gray-900 backdrop-blur-md dark:bg-opacity-75`}>
             <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
                 <a className="flex items-center space-x-3">
@@ -89,6 +90,7 @@ const Navbar = () => {
             </div>
            
         </nav>
+        </>
     )
 }
 

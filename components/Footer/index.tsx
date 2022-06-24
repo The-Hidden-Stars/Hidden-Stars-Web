@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { HTMLProps } from "react";
-import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faSpotify, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -37,7 +37,7 @@ const FooterItem : React.FC<IFooterItemProps> = ({ children, link, href,...props
 const Footer = () => {
     return (
         <footer className="bg-gray-900">
-            <div className="grid border-y border-gray-800 grid-cols-2 gap-8 py-8 px-6 md:grid-cols-3">
+            <div className="grid border-y border-gray-800 grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Sitemap</h2>
                     <ul className="text-gray-300">
@@ -51,7 +51,6 @@ const Footer = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Support Us</h2>
                     <ul className="text-gray-300">
                         <FooterItem target="_blank" link="https://discord.com/invite/CA9AEyWSGr">Join Discord Server</FooterItem>
-                        {/* <FooterItem link="/">Donate</FooterItem> */}
                     </ul>
                 </div>
                 <div>
@@ -62,12 +61,22 @@ const Footer = () => {
                         <FooterItem target="_blank" link="mailto:thehiddenstarmovement@gmail.com?subject=Message%20for%20The%20Hidden%20Stars%20Movement">Email</FooterItem>
                     </ul>
                 </div>
+                <div>
+                    <h2 className="mb-6 text-sm font-semibold text-gray-400 uppercase">Platforms</h2>
+                    <ul className="text-gray-300">
+                        <FooterItem target="_blank" link="https://open.spotify.com/show/2s969xZwt721aR6qKvubUY?si=3f7c26d01e1448c3 
+">Spotify</FooterItem>
+                        <FooterItem target="_blank" link="https://www.youtube.com/channel/UCi5CqFxakUx3hpPf0i13IRQ/videos">Youtube</FooterItem>
+                    </ul>
+                </div>
             </div>
             <div className="py-6 px-4 bg-black bg-opacity-20 md:flex md:items-center md:justify-between">
                 <span className="text-sm text-gray-300 sm:text-center">
                     © 2022 <Link href={"/"} passHref><a>The Hidden Stars™</a></Link>. All Rights Reserved.
                 </span>
-                <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
+                <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center">
+                    <FooterSocialIcon href="https://open.spotify.com/show/2s969xZwt721aR6qKvubUY?si=3f7c26d01e1448c3" icon={faSpotify}/>
+                    <FooterSocialIcon href="https://www.youtube.com/channel/UCi5CqFxakUx3hpPf0i13IRQ/videos" icon={faYoutube}/>
                     <FooterSocialIcon href="https://www.instagram.com/thehiddenstarmovement/" icon={faInstagram}/>
                     <FooterSocialIcon href="https://twitter.com/abhikosuru" icon={faTwitter}/>
                     <FooterSocialIcon href="mailto:thehiddenstarmovement@gmail.com?subject=Message%20for%20The%20Hidden%20Stars%20Movement" icon={faEnvelope}/>

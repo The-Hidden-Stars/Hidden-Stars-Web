@@ -12,6 +12,9 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import styles from "../styles/Home.module.css";
 import clsx from 'clsx'
 import EmbedIFrame from '../components/EmbedIFrame'
+import UpdateBar from '../components/UpdateBar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRadio } from '@fortawesome/free-solid-svg-icons'
 const Stars = dynamic(() => import("../components/Stars"), { ssr: false });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -132,8 +135,14 @@ const Home: NextPage = () => {
       <Head key="home">
         <title>Join | Hidden Stars</title>
       </Head>
+      <UpdateBar>
+          <p className="text-white text-xs">
+              The Hidden Star Charity Foundation <span className="text-blue-500">Coming Soon</span>, Stay Tuned. 
+          </p>
+          <FontAwesomeIcon color="#fff" width={15} icon={faRadio} />
+      </UpdateBar>
       <Navbar />
-      <main  className="flex-1 flex flex-col py-4 min-h-screen ">
+      <main className="flex-1 flex flex-col py-4 min-h-screen ">
           <Stars />
           <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
             <div className='z-10 flex justify-center flex-col items-center md:space-y-3'>
