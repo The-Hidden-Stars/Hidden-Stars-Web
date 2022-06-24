@@ -1,0 +1,37 @@
+.container {
+    background-color: rgba(0,0,0,1);
+}
+
+.container::before {
+    content: '';
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    transform: scaleX(0.75) scaleY(1);
+}
+
+@media all and (min-width:768px) {
+    .container {
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .container::before {
+        background-image:radial-gradient(circle, rgba(48,22,91,0.75) 24%, rgba(62,16,59,0.75) 43%, rgba(0,0,0,0.5) 69%);
+        animation: gradient-pulse 15s ease infinite; 
+    }
+}
+
+@keyframes gradient-pulse {
+    0% {
+        transform: scaleX(0.75) scaleY(1);
+    }
+    50% {
+        transform: scaleX(1.25) scaleY(1.25);
+    }
+    100% {
+        transform: scaleX(0.75) scaleY(1);
+    }
+}

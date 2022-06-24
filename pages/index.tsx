@@ -136,15 +136,15 @@ const Home: NextPage = () => {
         <title>Join | Hidden Stars</title>
       </Head>
       <UpdateBar>
-          <p className="text-white text-xs">
-              The Hidden Star Charity Foundation <span className="text-blue-500">Coming Soon</span>, Stay Tuned. 
+          <p style={{ lineHeight: "calc(1rem + 5px)"}} className="text-white text-xs z-10 text-center">
+              The Hidden Star Charity Foundation <span className="text-blue-500 md:text-pink-200 md:font-medium">Coming Soon</span>, Stay Tuned. 
+              <FontAwesomeIcon className="mx-2 -translate-y-[1.5px] inline" color="#fff" width={15} icon={faRadio} />
           </p>
-          <FontAwesomeIcon color="#fff" width={15} icon={faRadio} />
       </UpdateBar>
       <Navbar />
-      <main className="flex-1 flex flex-col py-4 min-h-screen ">
+      <main className="flex-1 flex flex-col py-4 min-h-[calc(100vh-128px)]">
           <Stars />
-          <header className='relative flex h-screen justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
+          <header className='relative flex h-[calc(100vh-128px)] justify-center flex-col items-center md:space-y-3 space-y-1 min-h-[350px]'>
             <div className='z-10 flex justify-center flex-col items-center md:space-y-3'>
               <h1 className='text-white md:text-6xl text-3xl font-bold'>
                 <span className='text-blue-500'>Join</span> The Hidden Stars

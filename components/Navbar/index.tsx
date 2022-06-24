@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/">
                 <a className="flex items-center space-x-3">
-                    <Image className="rounded-lg" src="/logo.png" width={35} height={35} alt="The Hidden Stars Logo" />
+                    <Image className="rounded-lg" src="/logo-transparent.png" width={40} height={40} alt="The Hidden Stars Logo" />
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                         Hidden Stars
                     </span>
