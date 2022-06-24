@@ -137,8 +137,8 @@ const Home: NextPage = () => {
       </Head>
       <UpdateBar>
           <p style={{ lineHeight: "calc(1rem + 5px)"}} className="text-white text-xs z-10 text-center">
-              The Hidden Star Charity Foundation <span className="text-blue-500 md:text-pink-200 md:font-medium">Coming Soon</span>, Stay Tuned. 
-              <FontAwesomeIcon className="mx-2 -translate-y-[1.5px] inline" color="#fff" width={15} icon={faRadio} />
+              The Hidden Star Charity Foundation <span className="text-blue-500 md:text-white md:font-medium">Coming Soon</span>, Stay Tuned. 
+              <FontAwesomeIcon className="mx-2 -translate-y-[1.5px] hidden md:inline" color="#fff" width={15} icon={faRadio} />
           </p>
       </UpdateBar>
       <Navbar />
