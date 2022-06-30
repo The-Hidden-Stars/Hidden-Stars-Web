@@ -195,7 +195,7 @@ const Home: NextPage = () => {
               <EmbedIFrame 
                 ref={founderIFrameRef}
                 className='md:w-[400px] md:h-[250px] w-80 h-44 !m-12'
-                src="https://www.youtube.com/embed/KdiJ9zqiMn4?origin=https://hiddenstars.vercel.app/" 
+                src="https://www.youtube.com/embed/KdiJ9zqiMn4" 
                 title="Hidden Stars Informational Video" 
               >
               </EmbedIFrame>
